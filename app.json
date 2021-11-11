@@ -15,6 +15,10 @@
     "HEROKU_APP_NAME": {
       "description": "Copy here the name that you put to the application",
       "value": ""
+    },
+    "MONGO_URL": {
+      "description": "Copy here the mongourl",
+      "value": ""
     }
   },
   "formation": {
@@ -24,12 +28,7 @@
     }
   },
   "image": "heroku/nodejs",
-  "addons": [
-    {
-      "plan": "mongolab:sandbox",
-      "as": "MONGO_URL"
-    }
-  ],
+  "addons": [  ],
   "buildpacks": [
     {
       "url": "heroku/nodejs"
